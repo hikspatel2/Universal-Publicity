@@ -20,7 +20,7 @@ const SITE = {
   phoneDisplay: '+91 00000 00000',               // REPLACE
   phoneTel: '+910000000000',                     // REPLACE (used in tel: links)
   whatsapp: '910000000000',                      // REPLACE (country code + number, digits only)
-  email: 'hello@your-domain.com',                // REPLACE
+  email: 'universalpublicity54@gmail.com',                // REPLACE
   address: 'Shop No. 00, Your Street, Your City, Gujarat 000000, India', // REPLACE
   hours: 'Mon – Sat: 10:00 AM – 7:00 PM',        // REPLACE
   // Google Maps embed. REPLACE with the "Embed a map" URL from Google Maps > Share.

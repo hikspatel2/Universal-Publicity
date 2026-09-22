@@ -9,7 +9,7 @@
  * true  = load real photos from /assets/portfolio/<category>/<category>-<n>.jpg
  *         (falls back to the placeholder for any file that is missing)
  */
-const USE_REAL_IMAGES = false;
+const USE_REAL_IMAGES = true;
 
 /* --------------------------------------------------------------------------
    SITE INFO — REPLACE every placeholder with real details (see README checklist)

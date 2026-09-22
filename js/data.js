@@ -26,7 +26,7 @@ const SITE = {
   // Google Maps embed. REPLACE with the "Embed a map" URL from Google Maps > Share.
   mapEmbed: 'https://www.google.com/maps?q=Gujarat%2C%20India&output=embed',
   social: {                                      // REPLACE with the real profile URLs
-    instagram: 'https://www.instagram.com/',
+    instagram: 'https://www.instagram.com/universal_publicity_54?stkn=YW92ajB5bjF0a2hn',
     facebook: 'https://www.facebook.com/share/19BDdcusCH/',
     youtube: 'https://www.youtube.com/',
     linkedin: 'https://www.linkedin.com/'

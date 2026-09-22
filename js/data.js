@@ -24,7 +24,7 @@ const SITE = {
   address: 'Basement 07, Nandani House, Naranpura Railway Crossing Rd, near Bank of Baroda, Shanti Nagar, Naranpura, Ahmedabad, Gujarat 380013', // REPLACE
   hours: 'Mon – Sat: 10:00 AM – 7:00 PM',        // REPLACE
   // Google Maps embed. REPLACE with the "Embed a map" URL from Google Maps > Share.
-  mapEmbed: 'https://www.google.com/maps?q=Gujarat%2C%20India&output=embed',
+  mapEmbed: 'https://maps.app.goo.gl/dNdk1Jd8JWAiEGCz7',
   social: {                                      // REPLACE with the real profile URLs
     instagram: 'https://www.instagram.com/universal_publicity_54?stkn=YW92ajB5bjF0a2hn',
     facebook: 'https://www.facebook.com/share/19BDdcusCH/',

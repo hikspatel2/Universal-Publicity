@@ -21,7 +21,7 @@ const SITE = {
   phoneTel: '+917874113409',                     // REPLACE (used in tel: links)
   whatsapp: '917874113409',                      // REPLACE (country code + number, digits only)
   email: 'universalpublicity54@gmail.com',                // REPLACE
-  address: 'Shop No. 00, Your Street, Your City, Gujarat 000000, India', // REPLACE
+  address: 'Basement 07, Nandani House, Naranpura Railway Crossing Rd, near Bank of Baroda, Shanti Nagar, Naranpura, Ahmedabad, Gujarat 380013', // REPLACE
   hours: 'Mon – Sat: 10:00 AM – 7:00 PM',        // REPLACE
   // Google Maps embed. REPLACE with the "Embed a map" URL from Google Maps > Share.
   mapEmbed: 'https://www.google.com/maps?q=Gujarat%2C%20India&output=embed',

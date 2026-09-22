@@ -18,8 +18,8 @@ const SITE = {
   name: 'Universal Publicity',
   url: 'https://www.your-domain.com/',           // REPLACE
   phoneDisplay: '+91 00000 00000',               // REPLACE
-  phoneTel: '+910000000000',                     // REPLACE (used in tel: links)
-  whatsapp: '910000000000',                      // REPLACE (country code + number, digits only)
+  phoneTel: '+917874113409',                     // REPLACE (used in tel: links)
+  whatsapp: '917874113409',                      // REPLACE (country code + number, digits only)
   email: 'universalpublicity54@gmail.com',                // REPLACE
   address: 'Shop No. 00, Your Street, Your City, Gujarat 000000, India', // REPLACE
   hours: 'Mon – Sat: 10:00 AM – 7:00 PM',        // REPLACE

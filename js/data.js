@@ -28,7 +28,7 @@ const SITE = {
   social: {                                      // REPLACE with the real profile URLs
     instagram: 'https://www.instagram.com/universal_publicity_54?stkn=YW92ajB5bjF0a2hn',
     facebook: 'https://www.facebook.com/share/19BDdcusCH/',
-    youtube: 'https://www.youtube.com/',
+    youtube: 'https://www.youtube.com/@universalpublicity54',
     linkedin: 'https://www.linkedin.com/'
   }
 };

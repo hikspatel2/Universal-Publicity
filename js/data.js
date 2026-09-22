@@ -27,7 +27,7 @@ const SITE = {
   mapEmbed: 'https://www.google.com/maps?q=Gujarat%2C%20India&output=embed',
   social: {                                      // REPLACE with the real profile URLs
     instagram: 'https://www.instagram.com/',
-    facebook: 'https://www.facebook.com/',
+    facebook: 'https://www.facebook.com/share/19BDdcusCH/',
     youtube: 'https://www.youtube.com/',
     linkedin: 'https://www.linkedin.com/'
   }

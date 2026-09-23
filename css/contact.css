@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Universal Publicity — contact.css (contact.html)
+   Loaded together with css/common.css (tokens, reset, buttons, header,
+   footer, floating UI, motion — shared across every page).
+   ========================================================================== */
+
+/* ---------- 11. CONTACT ---------- */
+.contact__grid { display: grid; gap: 48px; align-items: start; }
+@media (min-width: 960px) { .contact__grid { grid-template-columns: .9fr 1.1fr; gap: 64px; } }
+.contact-list { display: grid; gap: 18px; margin: 28px 0; }
+.contact-list li { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: center; }
+.contact-list__label { display: block; font-size: .82rem; color: var(--text-muted); }
+.contact-list a { font-weight: 500; word-break: break-word; }
+.contact-list span:not(.icon-tile):not(.contact-list__label) { font-weight: 500; }
+.contact__buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+.contact__social { display: flex; align-items: center; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
+.map { margin-top: 28px; aspect-ratio: 16 / 10; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--bg-tint); }
+.map iframe { width: 100%; height: 100%; border: 0; }
+
+.form {
+  padding: clamp(20px, 4vw, 36px); background: #fff; border: 1px solid var(--border);
+  border-radius: 24px; box-shadow: var(--shadow);
+}
+.form__title { font-size: 1.3rem; font-weight: 600; margin-bottom: 1.25rem; }
+.form__row { display: grid; gap: 0 16px; }
+@media (min-width: 560px) { .form__row--2 { grid-template-columns: 1fr 1fr; } }
+.field { margin-bottom: 16px; }
+.field label { display: block; margin-bottom: 6px; font-weight: 500; font-size: .9rem; }
+.req { color: var(--danger); }
+.field input, .field select, .field textarea {
+  width: 100%; min-height: 48px; padding: .7rem 1rem; background: #fff;
+  border: 1.5px solid var(--border); border-radius: 12px; transition: border-color .2s, box-shadow .2s;
+}
+.field textarea { min-height: 120px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(14, 136, 168, .2); }
+.field [aria-invalid="true"] { border-color: var(--danger); }
+.field select {
+  appearance: none; -webkit-appearance: none; padding-right: 2.5rem;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234E6469' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;
+}
+.field input[type="file"] { padding: .55rem; }
+.field input[type="file"]::file-selector-button {
+  margin-right: .75rem; padding: .45rem 1rem; border: 0; border-radius: 999px; background: var(--bg-tint); color: var(--accent-dark); font-weight: 600; cursor: pointer;
+}
+.input-group { display: flex; }
+.prefix {
+  display: grid; place-items: center; padding: 0 .9rem; background: var(--bg-soft); color: var(--text-muted); font-weight: 500;
+  border: 1.5px solid var(--border); border-right: 0; border-radius: 12px 0 0 12px;
+}
+.input-group input { border-radius: 0 12px 12px 0; }
+.field__hint { margin-top: 6px; font-size: .82rem; color: var(--text-muted); }
+.field__error { margin-top: 6px; font-size: .85rem; font-weight: 500; color: var(--danger); }
+.field__error:empty { display: none; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form__status { margin-top: 16px; padding: .9rem 1rem; border-radius: 12px; font-weight: 500; }
+.form__status:empty { display: none; }
+.form__status.is-success { background: #E7F6EC; color: #0B5D2A; }
+.form__status.is-error { background: #FDECEA; color: #8F1D14; }
+

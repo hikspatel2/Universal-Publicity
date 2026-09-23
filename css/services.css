@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Universal Publicity — services.css (services.html)
+   Loaded together with css/common.css (tokens, reset, buttons, header,
+   footer, floating UI, motion — shared across every page).
+   ========================================================================== */
+
+/* Services */
+.services { display: grid; gap: 20px; }
+@media (min-width: 640px) { .services { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .services { grid-template-columns: repeat(4, 1fr); } }
+.service {
+  padding: 28px 24px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.service:hover { transform: translateY(-6px); border-color: var(--accent-light); box-shadow: 0 18px 40px rgba(20, 108, 113, .16); }
+.service:hover .icon-tile { background: var(--accent-dark); color: #fff; }
+.service .icon-tile { margin-bottom: 20px; }
+.service h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: .6rem; }
+.service p { color: var(--text-muted); font-size: .93rem; }
+
+.outline-text {
+  max-width: 20ch; margin: clamp(48px, 7vw, 88px) 0 28px;
+  font-weight: 700; font-size: clamp(1.9rem, 1rem + 4.2vw, 4rem); line-height: 1.12; letter-spacing: -.01em;
+  color: var(--accent2-dark);
+}
+@supports (-webkit-text-stroke: 1px red) {
+  .outline-text { color: transparent; -webkit-text-stroke: 1.5px var(--accent2-dark); }
+}
+html[lang="gu"] .outline-text { line-height: 1.35; letter-spacing: 0; max-width: 24ch; }
+

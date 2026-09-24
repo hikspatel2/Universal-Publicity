@@ -112,6 +112,17 @@ const I18N = {
     'testi.goTo': 'Go to testimonial',
     'testi.label': 'Client testimonials',
 
+    /* Home page — section teasers */
+    'home.about.cta': 'Learn more about us',
+    'home.services.cta': 'View all services',
+    'home.works.title': 'Featured Work',
+    'home.works.sub': 'A quick look at what we have created for our clients.',
+    'home.works.cta': 'View all works',
+    'home.process.cta': 'See our full process',
+    'home.clients.cta': 'Meet all our clients',
+    'home.cta.title': 'Ready to start your project?',
+    'home.cta.sub': 'Tell us what you need and get a free, no-obligation quote today.',
+
     /* Contact + form */
     'contact.title': 'Get a Free Quote',
     'contact.sub': 'Tell us about your project and we will get back to you.',
@@ -267,6 +278,16 @@ const I18N = {
     'testi.next': 'આગલો પ્રતિભાવ',
     'testi.goTo': 'પ્રતિભાવ પર જાઓ',
     'testi.label': 'ગ્રાહકોના પ્રતિભાવ',
+
+    'home.about.cta': 'અમારા વિશે વધુ જાણો',
+    'home.services.cta': 'બધી સેવાઓ જુઓ',
+    'home.works.title': 'અમારું નોંધપાત્ર કામ',
+    'home.works.sub': 'અમે અમારા ગ્રાહકો માટે શું બનાવ્યું છે તેની ઝલક.',
+    'home.works.cta': 'બધું કામ જુઓ',
+    'home.process.cta': 'અમારી પૂરી પ્રક્રિયા જુઓ',
+    'home.clients.cta': 'બધા ગ્રાહકોને મળો',
+    'home.cta.title': 'તમારો પ્રોજેક્ટ શરૂ કરવા તૈયાર છો?',
+    'home.cta.sub': 'તમને શું જોઈએ છે તે જણાવો અને આજે જ ફ્રી ક્વોટ મેળવો.',
 
     'contact.title': 'ફ્રી ક્વોટ મેળવો',
     'contact.sub': 'તમારા પ્રોજેક્ટ વિશે જણાવો, અમે ટૂંક સમયમાં સંપર્ક કરીશું.',

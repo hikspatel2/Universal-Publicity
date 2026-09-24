@@ -29,7 +29,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;600&family=Kaushan+Script&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/works.css">
+  <link rel="stylesheet" href="css/process.css">
+  <link rel="stylesheet" href="css/clients.css">
 
   <!-- Runs before first paint: enables scroll-reveal styles and restores the saved language -->
   <script>
@@ -86,12 +92,16 @@
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <defs>
       <!-- Brand mark: a square "U" built from connected nodes and lines -->
+      <linearGradient id="brand-grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0E88A8"/>
+        <stop offset="1" stop-color="#5C2C7A"/>
+      </linearGradient>
       <symbol id="logo-mark" viewBox="0 0 48 48">
-        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <g fill="none" stroke="url(#brand-grad)" stroke-linecap="round" stroke-linejoin="round">
           <path d="M8 6v34h32V6" stroke-width="3.2"/>
           <path d="M8 6l16 17 16-17M8 23l16 17 16-17" stroke-width="1.3" opacity=".55"/>
         </g>
-        <g fill="#fff" stroke="currentColor" stroke-width="2.4">
+        <g fill="#fff" stroke="url(#brand-grad)" stroke-width="2.4">
           <circle cx="8" cy="6" r="3.6"/><circle cx="8" cy="23" r="3.6"/><circle cx="8" cy="40" r="3.6"/>
           <circle cx="24" cy="40" r="3.6"/><circle cx="40" cy="40" r="3.6"/><circle cx="40" cy="23" r="3.6"/>
           <circle cx="40" cy="6" r="3.6"/><circle cx="24" cy="23" r="2.4"/>
@@ -136,7 +146,7 @@
   <!-- ======================= HEADER ======================= -->
   <header class="site-header" id="site-header">
     <div class="container header__inner">
-      <a class="logo" href="#home" aria-label="Universal Publicity, home">
+      <a class="logo" href="index.html" aria-label="Universal Publicity, home">
         <svg class="logo__mark" aria-hidden="true" focusable="false"><use href="#logo-mark"/></svg>
         <span class="logo__text">
           <span class="logo__name">UNIVERSAL</span>
@@ -147,15 +157,15 @@
       <div class="nav-backdrop" id="nav-backdrop"></div>
       <nav class="nav" id="site-nav" data-i18n-aria-label="nav.label" aria-label="Main navigation">
         <ul class="nav__list">
-          <li><a class="nav__link" data-nav href="#home" data-i18n="nav.home">Home</a></li>
-          <li><a class="nav__link" data-nav href="#about" data-i18n="nav.about">About</a></li>
-          <li><a class="nav__link" data-nav href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a class="nav__link" data-nav href="#works" data-i18n="nav.works">Works</a></li>
-          <li><a class="nav__link" data-nav href="#process" data-i18n="nav.process">Process</a></li>
-          <li><a class="nav__link" data-nav href="#clients" data-i18n="nav.clients">Clients</a></li>
-          <li><a class="nav__link" data-nav href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a class="nav__link" data-nav href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="nav__link" data-nav href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a class="nav__link" data-nav href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a class="nav__link" data-nav href="works.html" data-i18n="nav.works">Works</a></li>
+          <li><a class="nav__link" data-nav href="process.html" data-i18n="nav.process">Process</a></li>
+          <li><a class="nav__link" data-nav href="clients.html" data-i18n="nav.clients">Clients</a></li>
+          <li><a class="nav__link" data-nav href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <a class="btn btn--primary nav__quote" href="#contact"><span data-i18n="cta.quote">Get Free Quote</span></a>
+        <a class="btn btn--primary nav__quote" href="contact.html"><span data-i18n="cta.quote">Get Free Quote</span></a>
       </nav>
 
       <div class="header__actions">
@@ -163,7 +173,7 @@
           <button type="button" data-lang="en" aria-pressed="true">EN</button>
           <button type="button" data-lang="gu" aria-pressed="false" lang="gu">ગુજ</button>
         </div>
-        <a class="btn btn--primary header__quote" href="#contact"><span data-i18n="cta.quote">Get Free Quote</span></a>
+        <a class="btn btn--primary header__quote" href="contact.html"><span data-i18n="cta.quote">Get Free Quote</span></a>
         <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria-label="menu.open" aria-label="Open menu">
           <svg class="icon icon--open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
           <svg class="icon icon--close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
@@ -194,11 +204,11 @@
           <h1 class="hero__title" data-i18n="hero.h1">Powerful Creatives That Take Your Brand To Another Level.</h1>
           <p class="hero__sub" data-i18n="hero.sub">Strategically-designed integrated brand solutions — from logos and business cards to banners, canopies and campaigns.</p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="#contact">
+            <a class="btn btn--primary" href="contact.html">
               <span data-i18n="hero.btnQuote">Get Free Quote</span>
               <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
             </a>
-            <a class="btn btn--secondary" href="#works"><span data-i18n="hero.btnWorks">View Our Works</span></a>
+            <a class="btn btn--secondary" href="works.html"><span data-i18n="hero.btnWorks">View Our Works</span></a>
           </div>
         </div>
 
@@ -235,12 +245,11 @@
       </div>
     </section>
 
-    <!-- ======================= ABOUT ======================= -->
+    <!-- ======================= ABOUT (teaser) ======================= -->
     <section class="section has-waves" id="about">
       <div class="container split">
         <div class="about__copy reveal">
           <h2 class="section-title" data-i18n="about.title">Who We Are</h2>
-          <!-- EDIT this paragraph to describe your business in your own words -->
           <p class="lead" data-i18n="about.p">Universal Publicity is a creative agency combining design, printing and advertising under one roof, helping businesses look sharper, get noticed and grow.</p>
           <ul class="highlights">
             <li>
@@ -256,9 +265,12 @@
               <div><h3 data-i18n="about.h3.t">Quick turnaround, outstanding support</h3><p data-i18n="about.h3.d">Projects delivered on time, and questions answered right away.</p></div>
             </li>
           </ul>
+          <a class="btn btn--secondary" href="about.html">
+            <span data-i18n="home.about.cta">Learn more about us</span>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+          </a>
         </div>
 
-        <!-- Replace with a real team / workshop photo when available -->
         <div class="about__art reveal crop" style="--d:.12s" aria-hidden="true">
           <svg class="about__waves" viewBox="0 0 400 400" preserveAspectRatio="none" focusable="false">
             <g fill="none" stroke="#5FD0D0" stroke-width="2" opacity=".55">
@@ -275,7 +287,7 @@
       </div>
     </section>
 
-    <!-- ======================= SERVICES ======================= -->
+    <!-- ======================= SERVICES (teaser) ======================= -->
     <section class="section section--soft" id="services">
       <div class="container">
         <div class="section-head reveal">
@@ -306,35 +318,22 @@
           </article>
         </div>
 
-        <p class="outline-text reveal" data-i18n="services.statement">All Types Of Designing, Printing &amp; Advertising Services Available</p>
-
-        <ul class="chips" id="service-chips" data-i18n-aria-label="services.chipsLabel" aria-label="Jump to a category in our works">
-          <li><button type="button" class="chip" data-filter-link="banner-media" data-i18n="chip.banner-media">Banners &amp; Hoardings</button></li>
-          <li><button type="button" class="chip" data-filter-link="invitation-card" data-i18n="chip.invitation-card">Invitation Cards</button></li>
-          <li><button type="button" class="chip" data-filter-link="canopy-tent" data-i18n="chip.canopy-tent">Canopy Tents</button></li>
-          <li><button type="button" class="chip" data-filter-link="auto-cycle-ads" data-i18n="chip.auto-cycle-ads">Auto &amp; Cycle Ads</button></li>
-          <li><button type="button" class="chip" data-filter-link="air-balloon" data-i18n="chip.air-balloon">Air Balloons</button></li>
-          <li><button type="button" class="chip" data-filter-link="business-card" data-i18n="chip.business-card">Business Cards</button></li>
-          <li><button type="button" class="chip" data-filter-link="rollup-standee" data-i18n="chip.rollup-standee">Roll-up Standees</button></li>
-          <li><button type="button" class="chip" data-filter-link="logo" data-i18n="chip.logo">Logo Design</button></li>
-        </ul>
+        <div class="works__more">
+          <a class="btn btn--secondary" href="services.html"><span data-i18n="home.services.cta">View all services</span></a>
+        </div>
       </div>
     </section>
 
-    <!-- ======================= PORTFOLIO ======================= -->
+    <!-- ======================= FEATURED WORKS ======================= -->
     <section class="section" id="works">
       <div class="container">
         <div class="section-head reveal">
-          <h2 class="section-title" data-i18n="works.title">Our Works</h2>
-          <p class="section-sub" data-i18n="works.sub">We love to create brand experiences that make your business stand out.</p>
+          <h2 class="section-title" data-i18n="home.works.title">Featured Work</h2>
+          <p class="section-sub" data-i18n="home.works.sub">A quick look at what we have created for our clients.</p>
         </div>
-
-        <div class="filters" id="works-filters" role="group" data-i18n-aria-label="works.filterLabel" aria-label="Filter works by category"></div>
-
-        <ul class="works-grid" id="works-grid" aria-live="polite"></ul>
-
+        <ul class="works-grid" id="featured-works" aria-live="polite"></ul>
         <div class="works__more">
-          <button type="button" class="btn btn--secondary" id="works-more" hidden><span data-i18n="works.more">Load more</span></button>
+          <a class="btn btn--secondary" href="works.html"><span data-i18n="home.works.cta">View all works</span></a>
         </div>
       </div>
     </section>
@@ -363,6 +362,9 @@
             <div class="step__body"><h3 data-i18n="p4.t">Launch</h3><p data-i18n="p4.d">We print, install or publish, and support you after.</p></div>
           </li>
         </ol>
+        <div class="works__more">
+          <a class="btn btn--secondary" href="process.html"><span data-i18n="home.process.cta">See our full process</span></a>
+        </div>
       </div>
     </section>
 
@@ -376,6 +378,11 @@
       </div>
       <div class="marquee" style="--dur:70s"><div class="marquee__track"></div></div>
       <div class="marquee marquee--reverse" style="--dur:80s"><div class="marquee__track"></div></div>
+      <div class="container">
+        <div class="works__more" style="margin-top: 32px;">
+          <a class="btn btn--secondary" href="clients.html"><span data-i18n="home.clients.cta">Meet all our clients</span></a>
+        </div>
+      </div>
     </section>
 
     <!-- ======================= TESTIMONIALS ======================= -->
@@ -398,139 +405,25 @@
       </div>
     </section>
 
-    <!-- ======================= CONTACT ======================= -->
-    <section class="section section--soft has-waves" id="contact">
-      <div class="container contact__grid">
-        <div class="contact__info reveal">
-          <h2 class="section-title" data-i18n="contact.title">Get a Free Quote</h2>
-          <p class="section-sub" data-i18n="contact.sub">Tell us about your project and we will get back to you.</p>
-
-          <ul class="contact-list">
-            <li>
-              <span class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg></span>
-              <div><span class="contact-list__label" data-i18n="contact.phone">Phone</span><a data-site-link="tel" data-site-text="phoneDisplay" href="tel:">+91 00000 00000</a></div>
-            </li>
-            <li>
-              <span class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg></span>
-              <div><span class="contact-list__label" data-i18n="contact.whatsapp">WhatsApp</span><a data-wa data-site-text="phoneDisplay" href="#" target="_blank" rel="noopener">+91 00000 00000</a></div>
-            </li>
-            <li>
-              <span class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
-              <div><span class="contact-list__label" data-i18n="contact.email">Email</span><a data-site-link="mail" data-site-text="email" href="mailto:">hello@your-domain.com</a></div>
-            </li>
-            <li>
-              <span class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
-              <div><span class="contact-list__label" data-i18n="contact.address">Address</span><span data-site-text="address">Shop No. 00, Your Street, Your City, Gujarat</span></div>
-            </li>
-            <li>
-              <span class="icon-tile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span>
-              <div><span class="contact-list__label" data-i18n="contact.hours">Working hours</span><span data-site-text="hours">Mon – Sat: 10:00 AM – 7:00 PM</span></div>
-            </li>
-          </ul>
-
-          <div class="contact__buttons">
-            <a class="btn btn--wa" data-wa href="#" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
-              <span data-i18n="contact.waBtn">Chat on WhatsApp</span>
-            </a>
-            <a class="btn btn--secondary" data-site-link="tel" href="tel:">
-              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>
-              <span data-i18n="contact.callBtn">Call Now</span>
-            </a>
-          </div>
-
-          <div class="contact__social">
-            <span class="contact-list__label" data-i18n="contact.follow">Follow us</span>
-            <div class="social social--light">
-              <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a>
-              <a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg></a>
-              <a data-social="youtube" href="#" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-youtube"/></svg></a>
-              <a data-social="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a>
-            </div>
-          </div>
-
-          <div class="map" id="map"></div>
-        </div>
-
-        <form class="form reveal" id="quote-form" style="--d:.12s" novalidate>
-          <h3 class="form__title" data-i18n="form.title">Your project details</h3>
-
-          <div class="form__row form__row--2">
-            <div class="field">
-              <label for="f-name"><span data-i18n="f.name">Full name</span> <span class="req" aria-hidden="true">*</span></label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="err-name">
-              <p class="field__error" id="err-name" aria-live="polite"></p>
-            </div>
-            <div class="field">
-              <label for="f-phone"><span data-i18n="f.phone">Phone number</span> <span class="req" aria-hidden="true">*</span></label>
-              <div class="input-group">
-                <span class="prefix" aria-hidden="true">+91</span>
-                <input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="16" required aria-required="true" aria-describedby="err-phone" data-i18n-placeholder="f.phonePh" placeholder="98765 43210">
-              </div>
-              <p class="field__error" id="err-phone" aria-live="polite"></p>
-            </div>
-          </div>
-
-          <div class="form__row form__row--2">
-            <div class="field">
-              <label for="f-email" data-i18n="f.email">Email (optional)</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="err-email">
-              <p class="field__error" id="err-email" aria-live="polite"></p>
-            </div>
-            <div class="field">
-              <label for="f-service" data-i18n="f.service">Service needed</label>
-              <select id="f-service" name="service">
-                <option value="" data-i18n="f.selectService">Select a service</option>
-                <option value="Logo Design" data-i18n="opt.logo">Logo Design</option>
-                <option value="Graphic Design" data-i18n="opt.graphic">Graphic Design</option>
-                <option value="Web Design" data-i18n="opt.web">Web Design</option>
-                <option value="Mobile App Design" data-i18n="opt.app">Mobile App Design</option>
-                <option value="Motion Graphics" data-i18n="opt.motion">Motion Graphics</option>
-                <option value="Banner Media" data-i18n="opt.banner">Banner Media</option>
-                <option value="Invitation Card" data-i18n="opt.invitation">Invitation Card</option>
-                <option value="Canopy Tent" data-i18n="opt.canopy">Canopy Tent</option>
-                <option value="Auto & Cycle Ads" data-i18n="opt.auto">Auto &amp; Cycle Ads</option>
-                <option value="Air Balloon" data-i18n="opt.balloon">Air Balloon</option>
-                <option value="Business Card" data-i18n="opt.card">Business Card</option>
-                <option value="Roll-up Standee" data-i18n="opt.rollup">Roll-up Standee</option>
-                <option value="Other" data-i18n="opt.other">Other</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="f-message" data-i18n="f.message">Message</label>
-            <textarea id="f-message" name="message" rows="4" data-i18n-placeholder="f.messagePh" placeholder="Size, quantity, deadline or anything else we should know"></textarea>
-          </div>
-
-          <div class="field">
-            <label for="f-file" data-i18n="f.file">Logo or reference file (optional)</label>
-            <input id="f-file" name="file" type="file" accept="image/*,.pdf,.ai,.psd,.cdr,.zip" aria-describedby="file-hint err-file">
-            <p class="field__hint" id="file-hint" data-i18n="f.fileHint">Images, PDF, AI, PSD, CDR or ZIP. Maximum 5 MB.</p>
-            <p class="field__error" id="err-file" aria-live="polite"></p>
-          </div>
-
-          <!-- Honeypot: real visitors never see or fill this -->
-          <div class="hp" aria-hidden="true">
-            <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--block" id="form-submit">
-            <span class="btn__label" data-i18n="f.submit">Send Enquiry</span>
-            <span class="btn__spinner" aria-hidden="true"></span>
-          </button>
-
-          <div class="form__status" id="form-status" role="status" aria-live="polite"></div>
-        </form>
+    <!-- ======================= FINAL CTA ======================= -->
+    <section class="section section--soft cta-band">
+      <div class="container cta-band__inner reveal">
+        <h2 class="section-title" data-i18n="home.cta.title">Ready to start your project?</h2>
+        <p class="section-sub" data-i18n="home.cta.sub">Tell us what you need and get a free, no-obligation quote today.</p>
+        <a class="btn btn--primary" href="contact.html">
+          <span data-i18n="hero.btnQuote">Get Free Quote</span>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+        </a>
       </div>
     </section>
-  </main>
 
-  <!-- ======================= FOOTER ======================= -->
+      </main>
+
+<!-- ======================= FOOTER ======================= -->
   <footer class="footer on-dark">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a class="logo" href="#home" aria-label="Universal Publicity, back to top">
+        <a class="logo" href="index.html" aria-label="Universal Publicity, back to top">
           <svg class="logo__mark" aria-hidden="true" focusable="false"><use href="#logo-mark"/></svg>
           <span class="logo__text"><span class="logo__name">UNIVERSAL</span><span class="logo__sub">publicity</span></span>
         </a>
@@ -546,13 +439,13 @@
       <nav class="footer__col" aria-labelledby="footer-links-title">
         <h2 class="footer__title" id="footer-links-title" data-i18n="footer.links">Quick links</h2>
         <ul>
-          <li><a href="#home" data-i18n="nav.home">Home</a></li>
-          <li><a href="#about" data-i18n="nav.about">About</a></li>
-          <li><a href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="#works" data-i18n="nav.works">Works</a></li>
-          <li><a href="#process" data-i18n="nav.process">Process</a></li>
-          <li><a href="#clients" data-i18n="nav.clients">Clients</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="works.html" data-i18n="nav.works">Works</a></li>
+          <li><a href="process.html" data-i18n="nav.process">Process</a></li>
+          <li><a href="clients.html" data-i18n="nav.clients">Clients</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
 
